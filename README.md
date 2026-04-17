@@ -105,13 +105,13 @@
 ### 截图
 
 **图1：工具首页**  
-文件：`demo-01-home.png`
+![](screenshots/demo-01-home.png)
 
 **图2：一步一屏步骤卡片**  
-文件：`demo-02-step-card.png`
+![](screenshots/demo-02-step-card.png)
 
 **图3：沟通卡片全屏展示**  
-文件：`demo-03-card-overlay.png`
+![](screenshots/demo-03-card-overlay.png)
 
 ---
 
