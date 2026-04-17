@@ -1,0 +1,11 @@
+{
+  "name": "一步一屏｜岗位执行支持器",
+  "short_name": "岗位支持",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f6fb",
+  "theme_color": "#2b5cff",
+  "description": "把岗位SOP拆成一步一屏 + 沟通卡片 + 记录导出（CSV），支持离线使用。",
+  "icons": []
+}
+
