@@ -64,12 +64,15 @@ h3 {
 }
 
 .job-item {
+  appearance: none;
+  -webkit-appearance: none;
   padding: 0.6rem;
   border-radius: 6px;
   border: 1px solid #d0d7ff;
   background: #f7f9ff;
   cursor: pointer;
   font-size: 0.95rem;
+  text-align: left;
 }
 
 .job-item.active {
@@ -105,6 +108,8 @@ h3 {
 }
 
 .card {
+  appearance: none;
+  -webkit-appearance: none;
   padding: 0.6rem;
   border-radius: 8px;
   background: #fff;
@@ -269,4 +274,3 @@ button:disabled {
     border-bottom: 1px solid #d0d7ff;
   }
 }
-

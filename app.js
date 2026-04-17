@@ -103,12 +103,14 @@ function renderJobs() {
   const jobList = $("#job-list");
   jobList.innerHTML = "";
   JOBS.forEach((job) => {
-    const div = document.createElement("div");
-    div.className = "job-item";
-    div.textContent = job.name;
-    div.dataset.jobId = job.id;
-    div.addEventListener("click", () => selectJob(job.id));
-    jobList.appendChild(div);
+    // 用 button 提升可访问性（也便于键盘操作/屏幕阅读器识别）
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "job-item";
+    btn.textContent = job.name;
+    btn.dataset.jobId = job.id;
+    btn.addEventListener("click", () => selectJob(job.id));
+    jobList.appendChild(btn);
   });
   updateJobActiveState();
 }
@@ -153,14 +155,15 @@ function renderCards(tab = "need") {
   list.innerHTML = "";
 
   (COMM_CARDS[tab] || []).forEach((card) => {
-    const div = document.createElement("div");
-    div.className = "card";
-    div.innerHTML = `
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "card";
+    btn.innerHTML = `
       <div>${escapeHtml(card.text)}</div>
       <div class="card-type">${escapeHtml(card.type)}</div>
     `;
-    div.addEventListener("click", () => showCardFullscreen(card.text));
-    list.appendChild(div);
+    btn.addEventListener("click", () => showCardFullscreen(card.text));
+    list.appendChild(btn);
   });
 }
 
@@ -447,4 +450,3 @@ document.addEventListener("DOMContentLoaded", () => {
     if (state.session) updateSessionInfo();
   }, 1000);
 });
-

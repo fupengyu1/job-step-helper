@@ -9,6 +9,10 @@
 
 ## 更新记录
 
+### v0.4
+- 对岗位选择和沟通卡片做了可点击性优化，交互更稳
+- 补充一张「本次记录」截图，展示用时与卡片点击次数
+
 ### v0.3
 - README 支持直接展示截图
 - 新增 `/screenshots` 目录，方便复用与引用
@@ -126,6 +130,9 @@
 
 **图3：沟通卡片全屏展示**  
 ![](screenshots/demo-03-card-overlay.png)
+
+**图4：本次记录示例**  
+![](screenshots/demo-04-session-record.png)
 
 ---
 
